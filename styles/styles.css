@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(140deg, #63687F, #323440); */
+    background-image: linear-gradient( 250deg, #FFAA85 10%, #B3315F 100%);
+    /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); */
+    background-attachment: fixed;
+    font-family: 'Comfortaa', cursive;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.nav {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-list svg {
+    display: none;
+}
+
+.nav-list ul {
+    display: flex;
+}
+
+.nav-list ul li {
+    list-style: none;
+    margin: 5px 6px;
+    font-size: 16px;
+}
+
+.nav-list ul li a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.nav-list ul li a:hover {
+    border-bottom: 2px solid #c44b67;
+    margin-bottom: 8px;
+    transition: ease 0.5s;
+}
+
+.hero  {
+    background: linear-gradient( to right, rgba(196, 75, 103, 0.9) 0%, rgba(0, 0, 0, 0) 100%), url("../img/pexels-nubia-navarro-(nubikini)-1517355.jpg");
+    /* width: 100vw; */
+    height: 90vh;
+    background-size: cover;
+    color: white;
+    padding: 7px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    margin: 28vh 7vh 0; 
+}
+
+form #search {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin: 5vh 1vh 0 11vh;
+}
+
+form #search:focus {
+    outline: none;
+    border: 1px solid rgba(196, 75, 103, 0.9);
+    transition: all ease 0.1;
+}
+
+.search-btn {
+    width: 150px;
+    height: 42px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    background-color: #e68279;
+    color: #eee;
+    box-shadow: 26px 15px 60px #5a3330;
+    cursor: pointer;
+}
+
+.most-popular .head {
+    display: flex;
+}
+
+.most-popular .head h2 {
+    color: #eee;
+    margin: 50px;
+    font-size: 25px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.cat-card {
+    background-color: #eee;
+    margin: 29px 5px 15px 5px;
+    /* height: 30%; */
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #bd6366;
+    padding: 10px;
+    color: brown;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.book-card {
+    max-width: 250px;
+    background-color: #eee;
+    padding: 20px 0;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 7px;
+}
+
+.book-card img {
+   width: 85%;
+}
+
+.book-card p{
+    font-size: 22px;
+    padding: 10px 20px 0 0;
+    text-align: right;
+    color: #bd6366;
+}

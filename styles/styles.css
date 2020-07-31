@@ -188,3 +188,73 @@ form #search:focus {
     font-weight: bold;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 719px) {
+    .nav-list ul {
+        flex-direction: column;
+        position: fixed;
+        top: 0vh;
+        right: 0vw;
+        background-color: #FFAA85;
+        width: 140px;
+        height: 100vh;
+        padding-top: 64px;
+        text-align: center;
+        z-index: 2;
+        transform: translateX(140px);
+        transition: ease-in 0.5s;
+    }
+
+    .nav-list ul.show {
+        transform: translateX(0px);
+        transition: ease-in 0.5s;
+    }
+
+    .nav-list svg {
+        display: block;
+        position: fixed;
+        z-index: 4;
+        right: 58px;
+        top: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-list ul li {
+        margin: 15px 6px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin: 20vh 7vh 0;
+    }
+
+    form #search {
+        margin: 5vh 1vh 0 7vh;
+    }
+
+    .search-btn {
+        margin: 6vw 0 0 17vw;
+    }
+
+    .most-popular .head {
+        display: block;
+    }
+
+    .categories {
+        margin-top: -40px;
+        justify-content: center;
+    }
+
+    .book-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1245px) {
+    .cat-card {
+        margin: 45px 5px 15px 5px;
+        height: 30%;
+    }
+}
